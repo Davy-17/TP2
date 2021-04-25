@@ -1,0 +1,175 @@
+body{
+    height : 120vh;
+    width : 100vw;
+    margin: 0;
+    padding: 0;
+    //background-color: #00d599;
+    font-family: $font__main;
+    overflow-x: hidden;
+    background: linear-gradient(-45deg, $color__body-vertpale, $color__body-vert, $color__body-bleu, $color__body-bleupale);
+    background-size: 400% 400%;
+    animation: animFond 5s ease infinite;
+}
+
+/*------------------------
+Clip-path body
+-------------------------*/
+
+.page-title{
+    margin-left: 3.5rem;
+    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},2rem);
+}
+body.home::after{
+position: absolute;
+width: 100%;
+height: 120vh;
+content: "";
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+//clip-path: polygon(100% 61%, 68% 100%, 100% 100%);
+   /* @include media-desktop{
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 67% 100%);
+    }*/
+       
+    @include tablet{
+        clip-path: polygon(85% 0, 100% 0, 100% 100%, 77% 100%);
+        background-color:#005543;
+    }
+z-index: -1;
+
+}
+/*------------------------
+Header
+-------------------------*/
+
+    .site-title{
+        font-family: $font__sitetitle;
+        font-weight: bold;
+        font-size: clamp(4rem, #{"-0.875rem + 8.333vw"},6rem);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 3.5rem;
+    a{
+        text-decoration: none;
+    }
+}
+.site-description{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3.5rem;
+    font-family: $font__sitetitle;
+    font-weight: normal;
+    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},2rem);
+}
+/*------------------------
+Liens
+-------------------------*/
+.accueil{
+
+    ul{
+list-style-type: none;
+font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.7rem);
+margin: 0;
+padding: 0;
+       li{
+        justify-content: space-around;
+        }
+    } 
+}
+
+img{
+        display: block;
+        //border-radius: 50%;
+    }
+/*----------------------------------------------
+Couleur grille 
+------------------------------------------------*/
+.cours{
+    $degre:52deg;
+    section:nth-of-type(1){
+        article{
+            background: $color__article;
+            background: linear-gradient($degre, $color__article 0%, rgba(26,210,207,1) 0%, rgba(0,50,112,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
+        }
+    }
+    section:nth-of-type(2){
+        article{
+            background: $color__article;
+            background: linear-gradient($degre, $color__article 0%, rgba(138,43,207,1) 0%, rgba(31,0,112,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
+        }
+    }
+     section:nth-of-type(4){
+        article{
+            background: $color__article;
+            background: linear-gradient($degre, $color__article 0%, rgba(210,26,192,1) 0%, rgba(112,0,36,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
+        }
+    } 
+    section:nth-of-type(5){
+        article{
+            background: $color__article;
+            background: linear-gradient($degre, $color__article 0%, rgba(207,205,43,1) 0%, rgba(112,51,0,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
+        }
+    }
+    section:nth-of-type(6){
+        article{
+            background: $color__article;
+            background: linear-gradient($degre, $color__article 0%, rgba(255,0,0,1) 0%, rgba(112,43,0,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
+        }
+    }
+
+}
+/*----------------------------------------------
+Grille 
+------------------------------------------------*/
+
+
+.cours{
+        display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
+    }
+    section.bloc{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        width: 90%;
+        margin: 1%;
+
+        p{
+            margin: .4rem;
+            font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
+        }
+        a{
+            font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+
+        @include tablet {
+            article{
+                width: 45%;
+                margin: 1%;
+            }
+        }
+        @include desktop {
+            article{
+                width: 29%;
+                margin: 1%;
+            }
+        }
+        
+
+    }
+}

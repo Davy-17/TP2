@@ -1,0 +1,253 @@
+.main-navigation {
+	display: block;
+	width: 100vw;
+	background-color: rgb(44, 44, 44);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 0rem;
+
+	ul {
+		display: none;
+		//position: absolute;
+		//width: 100%;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		background-color:  rgb(44, 44, 44);
+		text-align: left;
+		z-index: 99999;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			//float: left;
+			position: absolute;
+			top: 100%;
+			transition: left .5s;
+			left: -999em;
+			z-index: 99999;
+/*
+			ul {
+				left: -999em;
+				top: 0;
+			}
+*/
+			li {
+				a{
+					padding-left: 20px;
+					background-color: rgb(77, 77, 77);
+				}
+
+			}
+
+			a {
+				width: 100%;
+			}
+/*
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}*/
+		}
+		/* Fin du sub menu */
+
+		li:hover > ul,
+		li.focus > ul {
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	li {
+		position: relative;
+		/*
+		&:hover > a,
+		&.focus > a {
+		}
+		*/
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		padding: .5rem;
+	}
+/*
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}*/
+}
+
+
+
+
+/*---------------------------
+ Bouton Burger
+ ----------------------------*/
+.menu-toggle{
+padding: 0;
+//transition: transform .25s;
+//transform: rotate(0deg);
+border: 0;
+}
+/*
+.menu-toggle:hover,
+.menu-toggle:focus{
+	background: white;
+	}*/
+	.menu-toggle:focus{
+		outline: none;
+
+	}
+	/*.menu-toggle:active{
+		transform: scale(0.70)
+	}*/
+
+
+
+/*.main-navigation.toggled .menu-toggle{
+	transform: rotate(90deg);
+}*/
+
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+		li{
+			a{
+
+
+
+			&[href="#"]::after {
+				position: absolute;
+				content: "\2B9E";
+				width: 100%;
+				height: 100%;
+				top: 25%;
+				bottom: 0%;
+				left: 90%;
+				right: 0;
+
+			}
+
+			}
+
+		}
+		li.focus a[href="#"]::after,
+		a[href="#"]:hover::after
+		{
+			content: "\2B9F";
+		}
+}
+
+.accueil{
+
+	ul{
+	   li{
+		   text-align: center;
+		justify-content: space-around;
+		}
+	} 
+}
+
+/* -------------------------------------
+menu tablette
+-----------------------------------
+*/
+@media screen and (min-width: 37.5em) {
+	.main-navigation{
+		padding-top: 0rem;
+		padding-bottom: 0rem;
+		padding-right: 3.5rem;
+		padding-left: 3.5rem;
+	}
+	div#primary-menu{
+		padding-left: .5rem;
+		padding-right: .5rem;
+
+	}
+
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation.toggled ul,
+	.main-navigation ul {
+		display: flex;
+		//position: static;
+		justify-content: space-around;
+		a[href="#"]::after{
+			display: none;
+		}
+		ul{
+			display: none;
+		}
+		li:hover ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 150px;
+			animation: anim-sous-menu .5s both;
+		}
+		li:hover > ul,
+		li.focus > ul {
+			left: -10%;
+		}
+
+
+		li{
+			padding: 0;
+			a{
+				font-size: clamp(.2rem, #{"-0.875rem + 8.333vw"},.9rem);
+			}
+		}
+	}
+
+	.accueil{
+
+		ul{
+	list-style-type: none;
+	font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.7rem);
+	margin: 0;
+	padding: 0;
+		   li{
+			   text-align: start;
+			justify-content: space-around;
+			}
+		} 
+	}
+	.wp-block-column {
+		display: flex;
+		align-items: center;
+	}
+
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+
+}
+

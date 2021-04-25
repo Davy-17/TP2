@@ -1,0 +1,58 @@
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+
+    .carte{
+        width: 150px;
+        height: 150px;
+        margin: 5%;
+        cursor: pointer;
+        
+        .avant{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transform: perspective(600px) rotateY(0deg);
+            transition: transform .6s;
+            .image{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .arriere{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            background: white;
+            transform: perspective(600px) rotateY(180deg);
+            transition: transform .6s;
+
+            .info{
+                position: absolute;
+                margin-left: 5%;
+                h2{
+                    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},.9rem);
+                }
+                p{
+                    margin: 0;
+                    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},.7rem); 
+                }
+            }
+
+        } 
+    }      
+    /*Animation des cartes*/
+        .carte:hover > .avant{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+        .carte:hover > .arriere{
+            transform: perspective(600px) rotateY(0deg);
+        }
+}
+
+
+

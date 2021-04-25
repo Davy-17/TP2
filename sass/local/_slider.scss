@@ -1,0 +1,148 @@
+.carrousel-2{
+    width: 600vw;
+    height: 30vh;
+    display: flex;
+    transform: translateX(0);
+    transition: transform .5s;
+    flex-wrap: nowrap !important;
+
+    .slide__conteneur{
+        margin-bottom: 1rem;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        .slide{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+            @include tablet{
+                &{
+                    width: 60%;
+                }
+            }
+            img{
+                display: block;
+                margin: 2%;
+            }
+           
+            .slide__info{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                display: flex;
+                flex-direction: column;
+                //text-align: center;
+                p{
+                    color: rgb(255, 255, 255);
+                    font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
+                }
+                    a{
+                        color: rgb(207, 221, 84);
+                        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1rem);
+                        text-decoration: none;
+                        &:hover{
+                            color: rgb(255, 255, 255);
+                            transform: scale(.9);
+                            transition: .5s ease-in-out;
+                        }
+                    } 
+            }
+
+            
+        }
+
+    }
+    
+}
+/*------------------------------------
+bouton du carrousel
+--------------------------------------*/
+.conteneur-bouton{
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        color: white;
+        background-color: rgb(51, 45, 45);
+        border-radius: 50%;
+        font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.2rem);
+        &:hover{
+            background-color: rgb(92, 92, 92);
+            //animation: tourneBouton .5s forwards;
+        }
+        &:active{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+    }
+}
+.ctrl-carrousel{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    .rad-carrousel{
+        display: block;
+        margin: .5rem 2rem .5rem 2rem;
+
+    }
+}
+@include tablet {
+    .carrousel-2{
+        width: 300vw;
+         .slide__conteneur{
+        width: 50vw;
+    }
+
+    }
+
+    .rad-carrousel{
+        &:nth-of-type(4){
+            display: none;
+        }
+        &:nth-of-type(5){
+            display: none;
+        }
+        &:nth-of-type(6){
+            display: none;
+        }
+    }
+
+}
+@include desktop {
+    .carrousel-2{
+        width: 200vw;
+        .slide__conteneur{
+            width: 33.33vw;
+    }
+    
+    }
+
+    .rad-carrousel{
+        &:nth-of-type(3){
+            display: none;
+        }
+        &:nth-of-type(4){
+            display: none;
+        }
+        &:nth-of-type(5){
+            display: none;
+        }
+        &:nth-of-type(6){
+            display: none;
+        }
+    }
+}
