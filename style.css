@@ -926,6 +926,10 @@ menu tablette
   .wp-block-column {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+  }
+  .wp-block-column .wp-block-image {
+    margin-right: 2rem;
   }
 }
 
@@ -1178,7 +1182,7 @@ menu tablette
 /* local
 -------------------------------*/
 body {
-  height: 120vh;
+  height: 290vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -1343,6 +1347,18 @@ Grille
     width: 29%;
     margin: 1%;
   }
+}
+
+.nouvelles {
+  margin-left: 1rem;
+}
+
+.widget-title {
+  margin-left: 1rem;
+}
+
+.entry-content, .entry-header {
+  width: 70%;
 }
 
 /* burger

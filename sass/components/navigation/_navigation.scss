@@ -224,7 +224,12 @@ menu tablette
 	.wp-block-column {
 		display: flex;
 		align-items: center;
+		justify-content: flex-end;
+	.wp-block-image {
+		margin-right: 2rem;
 	}
+	}
+
 
 }
 

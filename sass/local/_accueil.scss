@@ -1,5 +1,5 @@
 body{
-    height : 120vh;
+    height : 290vh;
     width : 100vw;
     margin: 0;
     padding: 0;
@@ -156,7 +156,6 @@ Grille
             text-align: center;
         }
     }
-
         @include tablet {
             article{
                 width: 45%;
@@ -169,7 +168,14 @@ Grille
                 margin: 1%;
             }
         }
-        
-
     }
+}
+.nouvelles{
+    margin-left: 1rem;
+}
+.widget-title{
+    margin-left: 1rem;
+}
+.entry-content, .entry-header {
+    width: 70%;
 }

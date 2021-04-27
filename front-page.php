@@ -62,6 +62,16 @@
 			$precedent = $tPropriete['typeCours'] ;
 			endwhile;?>
 			</section>
+
+			<section class="nouvelles">
+				<!--button id="bout_nouvelles">Dernières nouvelles</button-->
+				<section></section>
+			</section>
+
+
+
+
+
 		<?php endif; ?>
 
 	</main><!-- #main -->
