@@ -63,14 +63,19 @@
 			endwhile;?>
 			</section>
 
+			<!-- Formulaire d'ajout d'un article de catégorie "Nouvelles" -->
+			<section class="admin-rapide">
+				<h3>Ajouter un article de catégorie "Nouvelles"</h3>
+				<input type="text" name="title" placeholder="Titre">
+				<textarea name="content" placeholder="Contenu"></textarea>
+				<button id="bout-rapide">Créer une nouvelle</button>
+			</section>
+
+			<!-- Les "Nouvelles" -->
 			<section class="nouvelles">
 				<!--button id="bout_nouvelles">Dernières nouvelles</button-->
 				<section></section>
 			</section>
-
-
-
-
 
 		<?php endif; ?>
 
