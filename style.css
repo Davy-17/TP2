@@ -1279,17 +1279,17 @@ Couleur grille
   background: linear-gradient(52deg, #1b1b1c 0%, #8a2bcf 0%, #1f0070 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(4) article {
+.cours section:nth-of-type(5) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, #d21ac0 0%, #700024 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(5) article {
+.cours section:nth-of-type(6) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, #cfcd2b 0%, #703300 53%, black 53%, #3f3f3f 100%);
 }
 
-.cours section:nth-of-type(6) article {
+.cours section:nth-of-type(7) article {
   background: #1b1b1c;
   background: linear-gradient(52deg, #1b1b1c 0%, red 0%, #702b00 53%, black 53%, #3f3f3f 100%);
 }

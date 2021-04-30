@@ -100,19 +100,19 @@ Couleur grille
             background: linear-gradient($degre, $color__article 0%, rgba(138,43,207,1) 0%, rgba(31,0,112,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
-     section:nth-of-type(4){
+     section:nth-of-type(5){
         article{
             background: $color__article;
             background: linear-gradient($degre, $color__article 0%, rgba(210,26,192,1) 0%, rgba(112,0,36,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     } 
-    section:nth-of-type(5){
+    section:nth-of-type(6){
         article{
             background: $color__article;
             background: linear-gradient($degre, $color__article 0%, rgba(207,205,43,1) 0%, rgba(112,51,0,1) 53%, $color__article-noir 53%, $color__article-gris 100%);
         }
     }
-    section:nth-of-type(6){
+    section:nth-of-type(7){
         article{
             background: $color__article;
             background: linear-gradient($degre, $color__article 0%, rgba(255,0,0,1) 0%, rgba(112,43,0,1) 53%, $color__article-noir 53%, $color__article-gris 100%);

@@ -10,6 +10,7 @@
 
  get_header(); 
 ?>
+
 	<main id="primary" class="site-main">
 	
 
@@ -52,7 +53,7 @@
 							<?php if (in_array($tPropriete['typeCours'], ['Web', 'Spécifique','Jeu', 'Image 2d/3d', 'Conception']) ) : 
 								get_template_part( 'template-parts/content', 'cours-carrousel' );
 								$chaine_bouton_radio .= '<input class = "rad-carrousel" type="radio" name ="rad-'.$tPropriete['typeCours'].'">';
-							elseif ($tPropriete['typeCours'] == 'Projet'):
+							elseif ($tPropriete['typeCours'] == 'Projet' || $tPropriete['typeCours'] == 'Mes projets'):
 								get_template_part( 'template-parts/content', 'galerie' );
 							
 								else :
@@ -64,12 +65,16 @@
 			</section>
 
 			<!-- Formulaire d'ajout d'un article de catégorie "Nouvelles" -->
+			<?php if (current_user_can('administrator')) : ?>
+
 			<section class="admin-rapide">
 				<h3>Ajouter un article de catégorie "Nouvelles"</h3>
 				<input type="text" name="title" placeholder="Titre">
 				<textarea name="content" placeholder="Contenu"></textarea>
 				<button id="bout-rapide">Créer une nouvelle</button>
 			</section>
+
+			<?php endif; ?>
 
 			<!-- Les "Nouvelles" -->
 			<section class="nouvelles">
@@ -108,7 +113,7 @@ function class_bloc($typeCours){
 	if (in_array($typeCours, ['Web','Spécifique', 'Jeu', 'Image 2d/3d', 'Conception'])){
 		return('class = "carrousel-2"');
 	} 
-	elseif($typeCours == 'Projet'){
+	elseif($typeCours == 'Projet' || $typeCours == 'Mes projets'){
 		return('class = "galerie"');
 }
 	else{
