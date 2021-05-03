@@ -1,5 +1,5 @@
 body{
-    height : 350vh;
+    height : 310vh;
     width : 100vw;
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ body{
 Clip-path body
 -------------------------*/
 .page-title{
-    margin-left: 3.5rem;
     font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},2rem);
 }
 body.home::after{
@@ -155,4 +154,21 @@ Grille
 }
 .entry-content, .entry-header {
     width: 70%;
+}
+//Bouton
+#bout-rapide{
+    background-color: #b5ffbc;
+    &:hover{
+        background-color: #ffffff;
+    }
+}
+//Commentaire
+input[type="text"] {
+    width: 50%;
+}
+textarea {
+    width: 50%;
+}
+.admin-rapide{
+    margin-left: 1rem;
 }

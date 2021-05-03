@@ -726,7 +726,7 @@ textarea {
 	#primary .site-main (section principale de la page)
 	#colophon .site-footer
 	*/
-.site-branding, #primary, #colophon, .menu-toggle {
+.site-branding, #colophon, .menu-toggle {
   margin: 0;
 }
 
@@ -1192,7 +1192,7 @@ menu tablette
 /* local
 -------------------------------*/
 body {
-  height: 350vh;
+  height: 310vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -1207,7 +1207,6 @@ body {
 Clip-path body
 -------------------------*/
 .page-title {
-  margin-left: 3.5rem;
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
@@ -1344,6 +1343,26 @@ Grille
 
 .entry-content, .entry-header {
   width: 70%;
+}
+
+#bout-rapide {
+  background-color: #b5ffbc;
+}
+
+#bout-rapide:hover {
+  background-color: #ffffff;
+}
+
+input[type="text"] {
+  width: 50%;
+}
+
+textarea {
+  width: 50%;
+}
+
+.admin-rapide {
+  margin-left: 1rem;
 }
 
 /* burger
@@ -1592,7 +1611,7 @@ bouton du carrousel
 .galerie .carte {
   width: 150px;
   height: 150px;
-  margin: 5%;
+  margin: 4%;
   cursor: pointer;
 }
 
@@ -1691,5 +1710,29 @@ Header
 
 .entry-header h2, .page-header h2 {
   font-size: 3rem;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.entry-header, .entry-content, .entry-footer {
+  margin-left: 3rem;
+}
+
+@media (min-width: 600px) {
+  .site-info {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+section#calendar-3 {
+  width: 50%;
+}
+
+section#categories-3 {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
