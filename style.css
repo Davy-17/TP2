@@ -674,8 +674,15 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-areas: "header header" "main sidebar" "footer footer";
+  grid-template-columns: 100%;
+  grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
+}
+
+@media (min-width: 1200px) {
+  .site {
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
 }
 
 .site-header {
@@ -690,6 +697,9 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
+  background-color: #cdf0e1;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .site-footer {
@@ -1224,31 +1234,6 @@ body.home::after {
 }
 
 /*------------------------
-Header
--------------------------*/
-.site-title {
-  font-family: "Montserrat", monospace;
-  font-weight: bold;
-  font-size: clamp(4rem, -0.875rem + 8.333vw, 6rem);
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 3.5rem;
-}
-
-.site-title a {
-  text-decoration: none;
-}
-
-.site-description {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 3.5rem;
-  font-family: "Montserrat", monospace;
-  font-weight: normal;
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
-}
-
-/*------------------------
 Liens
 -------------------------*/
 .accueil ul {
@@ -1661,4 +1646,50 @@ bouton du carrousel
 
 /* Formulaire
 -------------------------------*/
+/* Page
+-------------------------------*/
+/*------------------------
+Header
+-------------------------*/
+.site-branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.site-title {
+  font-family: "Montserrat", monospace;
+  font-weight: bold;
+  font-size: clamp(4rem, -0.875rem + 8.333vw, 6rem);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3.5rem;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.site-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 3.5rem;
+  font-family: "Montserrat", monospace;
+  font-weight: normal;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
+}
+
+.entry-header, .page-header {
+  color: #e93131;
+}
+
+.entry-header h1, .page-header h1 {
+  font-size: 3rem;
+}
+
+.entry-header h2, .page-header h2 {
+  font-size: 3rem;
+}
 /*# sourceMappingURL=style.css.map */
