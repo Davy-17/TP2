@@ -1612,6 +1612,7 @@ bouton du carrousel
   display: flex;
   flex-wrap: wrap;
   /*Animation des cartes*/
+  /*thumbnail*/
 }
 
 .galerie .carte {
@@ -1667,6 +1668,11 @@ bouton du carrousel
 
 .galerie .carte:hover > .arriere {
   transform: perspective(600px) rotateY(0deg);
+}
+
+.post-thumbnail {
+  width: 70%;
+  margin-left: 3rem;
 }
 
 /* Formulaire

@@ -52,7 +52,12 @@
         .carte:hover > .arriere{
             transform: perspective(600px) rotateY(0deg);
         }
-}
+        /*thumbnail*/
 
+}
+    .post-thumbnail {
+        width: 70%;
+        margin-left: 3rem;
+}
 
 
