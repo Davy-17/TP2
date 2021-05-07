@@ -1,5 +1,5 @@
 body{
-    height : 310vh;
+    height : 400vh;
     width : 100vw;
     margin: 0;
     padding: 0;
@@ -57,7 +57,10 @@ padding: 0;
 
 img{
         display: block;
-        //border-radius: 50%;
+        border-radius: 15px;
+    }
+    .wp-block-image:not(.is-style-rounded) img {
+        border-radius: 15px;
     }
 /*----------------------------------------------
 Couleur grille 

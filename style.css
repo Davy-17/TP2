@@ -705,6 +705,7 @@ textarea {
 @media (min-width: 1200px) {
   .widget-area {
     border-bottom-left-radius: 500px;
+    box-shadow: -3px 0px 5px #2f2f2f;
   }
 }
 
@@ -1198,7 +1199,7 @@ menu tablette
 /* local
 -------------------------------*/
 body {
-  height: 310vh;
+  height: 400vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -1254,6 +1255,11 @@ Liens
 
 img {
   display: block;
+  border-radius: 15px;
+}
+
+.wp-block-image:not(.is-style-rounded) img {
+  border-radius: 15px;
 }
 
 /*----------------------------------------------
@@ -1646,6 +1652,7 @@ bouton du carrousel
   background: white;
   transform: perspective(600px) rotateY(180deg);
   transition: transform .6s;
+  border-radius: 15px;
 }
 
 .galerie .carte .arriere .info {
@@ -1673,6 +1680,11 @@ bouton du carrousel
 .post-thumbnail {
   width: 70%;
   margin-left: 3rem;
+}
+
+.post-thumbnail img {
+  border-radius: 20px;
+  box-shadow: -4px 5px 5px #2f2f2f;
 }
 
 /* Formulaire
@@ -1749,5 +1761,10 @@ Header
 section .calendar_wrap {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/*Description projet*/
+.entry-content p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

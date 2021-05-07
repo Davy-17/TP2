@@ -30,7 +30,7 @@
             background: white;
             transform: perspective(600px) rotateY(180deg);
             transition: transform .6s;
-
+            border-radius: 15px;
             .info{
                 position: absolute;
                 margin-left: 5%;
@@ -58,6 +58,10 @@
     .post-thumbnail {
         width: 70%;
         margin-left: 3rem;
+}
+.post-thumbnail img{
+    border-radius: 20px;
+    box-shadow: -4px 5px 5px #2f2f2f;
 }
 
 
