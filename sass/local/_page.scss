@@ -51,6 +51,7 @@ Header
         justify-content: space-evenly;
     }
 }
+/*Calendrier*/
 @include tablet{  
     section#calendar-3 {
         width: 50%;
@@ -64,9 +65,10 @@ padding-left: 1rem;
 padding-right: 1rem;
 }
 /*Description projet*/
+/*
 .entry-content p{
     text-align: center;
 }
-
+*/
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Michel-Picard_Davy_4w4
 Theme URI: http://underscores.me/
@@ -1226,9 +1227,6 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
-  /* @include media-desktop{
-        clip-path: polygon(85% 0, 100% 0, 100% 100%, 67% 100%);
-    }*/
   z-index: -1;
 }
 
@@ -1253,6 +1251,7 @@ Liens
   justify-content: space-around;
 }
 
+/*Les images d'accueil*/
 img {
   display: block;
   border-radius: 15px;
@@ -1345,6 +1344,7 @@ Grille
   }
 }
 
+/*Les nouvelles*/
 .nouvelles {
   margin-left: 1rem;
 }
@@ -1617,6 +1617,7 @@ bouton du carrousel
 .galerie {
   display: flex;
   flex-wrap: wrap;
+  /*La carte*/
   /*Animation des cartes*/
   /*thumbnail*/
 }
@@ -1626,6 +1627,8 @@ bouton du carrousel
   height: 150px;
   margin: 4%;
   cursor: pointer;
+  /*Avant de la carte: contient image*/
+  /*Arrière de la carte avec l'information sur le projet*/
 }
 
 .galerie .carte .avant {
@@ -1749,6 +1752,7 @@ Header
   }
 }
 
+/*Calendrier*/
 @media (min-width: 600px) {
   section#calendar-3 {
     width: 50%;
@@ -1764,7 +1768,9 @@ section .calendar_wrap {
 }
 
 /*Description projet*/
-.entry-content p {
-  text-align: center;
+/*
+.entry-content p{
+    text-align: center;
 }
+*/
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,13 @@
 .galerie{
     display: flex;
     flex-wrap: wrap;
-
+/*La carte*/
     .carte{
         width: 150px;
         height: 150px;
         margin: 4%;
         cursor: pointer;
-        
+        /*Avant de la carte: contient image*/
         .avant{
             width: 150px;
             height: 150px;
@@ -21,6 +21,7 @@
                 height: 150px;
             }
         }
+        /*Arrière de la carte avec l'information sur le projet*/
         .arriere{
             width: 150px;
             height: 150px;
@@ -52,10 +53,10 @@
         .carte:hover > .arriere{
             transform: perspective(600px) rotateY(0deg);
         }
-        /*thumbnail*/
+    /*thumbnail*/
 
 }
-    .post-thumbnail {
+.post-thumbnail {
         width: 70%;
         margin-left: 3rem;
 }

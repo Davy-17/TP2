@@ -3,7 +3,6 @@ body{
     width : 100vw;
     margin: 0;
     padding: 0;
-    //background-color: #00d599;
     font-family: $font__main;
     overflow-x: hidden;
     background: linear-gradient(-45deg, $color__body-vertpale, $color__body-vert, $color__body-bleu, $color__body-bleupale);
@@ -25,18 +24,12 @@ content: "";
 top: 0;
 bottom: 0;
 left: 0;
-right: 0;
-//clip-path: polygon(100% 61%, 68% 100%, 100% 100%);
-   /* @include media-desktop{
-        clip-path: polygon(85% 0, 100% 0, 100% 100%, 67% 100%);
-    }*/
-       
+right: 0;   
     @include tablet{
         clip-path: polygon(85% 0, 100% 0, 100% 100%, 77% 100%);
         background-color:#005543;
     }
 z-index: -1;
-
 }
 
 /*------------------------
@@ -54,7 +47,7 @@ padding: 0;
         }
     } 
 }
-
+/*Les images d'accueil*/
 img{
         display: block;
         border-radius: 15px;
@@ -149,6 +142,7 @@ Grille
         }
     }
 }
+/*Les nouvelles*/
 .nouvelles{
     margin-left: 1rem;
 }
@@ -158,14 +152,14 @@ Grille
 .entry-content, .entry-header {
     width: 70%;
 }
-//Bouton
+//Boutons
 #bout-rapide{
     background-color: #b5ffbc;
     &:hover{
         background-color: #ffffff;
     }
 }
-//Commentaire
+//Commentaires
 input[type="text"] {
     width: 50%;
 }
