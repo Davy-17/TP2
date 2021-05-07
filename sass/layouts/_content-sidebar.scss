@@ -32,6 +32,10 @@
 	background-color: rgb(205, 240, 225);
 	padding-left: 10%;
 	padding-right: 10%;
+	@include desktop{
+		border-bottom-left-radius: 500px;
+	}
+	
 }
 
 .site-footer {

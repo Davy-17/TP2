@@ -702,6 +702,12 @@ textarea {
   padding-right: 10%;
 }
 
+@media (min-width: 1200px) {
+  .widget-area {
+    border-bottom-left-radius: 500px;
+  }
+}
+
 .site-footer {
   grid-area: footer;
 }
@@ -1700,16 +1706,13 @@ Header
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
-.entry-header, .page-header {
-  color: #ff6e6e;
-}
-
 .entry-header h1, .page-header h1 {
-  font-size: 3rem;
+  color: #ff6e6e;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
 .entry-header h2, .page-header h2 {
-  font-size: 3rem;
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
 }
 
 .page-header {
