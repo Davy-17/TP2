@@ -153,19 +153,27 @@ Grille
     width: 70%;
 }
 //Boutons
+.conteneur-bout {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
 #bout-rapide{
     background-color: #b5ffbc;
+    margin-top: 1rem;
     &:hover{
         background-color: #ffffff;
     }
 }
 //Commentaires
 input[type="text"] {
-    width: 50%;
+    width: 100%;
 }
 textarea {
-    width: 50%;
+    width: 100%;
 }
 .admin-rapide{
     margin-left: 1rem;
+    margin-right: 2rem;
 }

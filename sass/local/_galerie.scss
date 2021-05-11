@@ -1,6 +1,7 @@
 .galerie{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 /*La carte*/
     .carte{
         width: 150px;

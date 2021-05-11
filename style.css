@@ -705,7 +705,7 @@ textarea {
 
 @media (min-width: 1200px) {
   .widget-area {
-    border-bottom-left-radius: 500px;
+    border-bottom-left-radius: 200px;
     box-shadow: -3px 0px 5px #2f2f2f;
   }
 }
@@ -1357,8 +1357,16 @@ Grille
   width: 70%;
 }
 
+.conteneur-bout {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
 #bout-rapide {
   background-color: #b5ffbc;
+  margin-top: 1rem;
 }
 
 #bout-rapide:hover {
@@ -1366,15 +1374,16 @@ Grille
 }
 
 input[type="text"] {
-  width: 50%;
+  width: 100%;
 }
 
 textarea {
-  width: 50%;
+  width: 100%;
 }
 
 .admin-rapide {
   margin-left: 1rem;
+  margin-right: 2rem;
 }
 
 /* burger
@@ -1617,6 +1626,7 @@ bouton du carrousel
 .galerie {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /*La carte*/
   /*Animation des cartes*/
   /*thumbnail*/
