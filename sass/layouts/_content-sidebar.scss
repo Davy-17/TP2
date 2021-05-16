@@ -32,6 +32,7 @@
 	background-color: rgb(205, 240, 225);
 	padding-left: 10%;
 	padding-right: 10%;
+	box-shadow: -3px 0px 5px #2f2f2f;
 	@include desktop{
 		border-bottom-left-radius: 200px;
 		box-shadow: -3px 0px 5px #2f2f2f
