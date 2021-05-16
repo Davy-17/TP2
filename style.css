@@ -698,7 +698,7 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
-  background-color: #cdf0e1;
+  background-color: #99ffb8;
   padding-left: 10%;
   padding-right: 10%;
   box-shadow: -3px 0px 5px #2f2f2f;
@@ -1201,7 +1201,7 @@ menu tablette
 /* local
 -------------------------------*/
 body {
-  height: 400vh;
+  height: 300vh;
   width: 100vw;
   margin: 0;
   padding: 0;
