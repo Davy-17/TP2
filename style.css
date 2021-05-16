@@ -1200,6 +1200,9 @@ menu tablette
 ########################################*/
 /* local
 -------------------------------*/
+/*------------------------------------
+body
+--------------------------------------*/
 body {
   height: 400vh;
   width: 100vw;
@@ -1395,6 +1398,9 @@ textarea {
 
 /* burger
 -------------------------------*/
+/*------------------------------------
+Le menu burger
+--------------------------------------*/
 #menu {
   width: 60px;
   cursor: pointer;
@@ -1412,7 +1418,7 @@ les barres du menu burger
   height: 4px;
   background-color: #ffbd58;
   border-radius: 10px;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
 }
 
 #barre1 {
@@ -1484,6 +1490,9 @@ Animation bouton carroussel
 }*/
 /* slider
 -------------------------------*/
+/*------------------------------------
+Le carrousel
+--------------------------------------*/
 .carrousel-2 {
   width: 600vw;
   height: 30vh;
@@ -1639,7 +1648,6 @@ bouton du carrousel
   justify-content: center;
   /*La carte*/
   /*Animation des cartes*/
-  /*thumbnail*/
 }
 
 .galerie .carte {
@@ -1700,6 +1708,7 @@ bouton du carrousel
   transform: perspective(600px) rotateY(0deg);
 }
 
+/*thumbnail*/
 .post-thumbnail {
   width: 70%;
   margin-left: 3rem;
@@ -1786,11 +1795,4 @@ section .calendar_wrap {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
-/*Description projet*/
-/*
-.entry-content p{
-    text-align: center;
-}
-*/
 /*# sourceMappingURL=style.css.map */

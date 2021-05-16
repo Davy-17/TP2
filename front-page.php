@@ -33,6 +33,10 @@
 				the_post();
 				convertirTableau($tPropriete);
                 
+/*------------------------------------
+Récupère les cours
+--------------------------------------*/
+
 				if ($tPropriete['typeCours'] != $precedent): 
 						if( "XXXXXX" !=$precedent) :?>
 							</section>
@@ -65,8 +69,10 @@
 			</section>
 
 			<!-- Formulaire d'ajout d'un article de catégorie "Nouvelles" -->
-			<?php if (current_user_can('administrator')) : ?>
 
+			<!-- Seul l'administrateur peut avoir accès au formulaire d'ajout -->
+			<?php if (current_user_can('administrator')) : ?>
+			<!-- Formulaire -->
 			<section class="admin-rapide">
 				<h3>Ajouter un article de catégorie "Nouvelles"</h3>
 				<div class="conteneur-bout">
@@ -91,6 +97,10 @@
 <?php
 get_sidebar();
 get_footer();
+
+/*------------------------------------
+Tableau de valeurs pour les cours
+--------------------------------------*/
 
 function convertirTableau(&$tPropriete)
 {
