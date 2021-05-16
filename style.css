@@ -1396,9 +1396,12 @@ textarea {
 /* burger
 -------------------------------*/
 #menu {
-  width: 35px;
+  width: 60px;
   cursor: pointer;
   margin-left: 3.5rem;
+  background-color: #4d4444;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 /*------------------------------------
