@@ -151,6 +151,9 @@ Grille
 }
 .entry-content, .entry-header {
     width: 70%;
+    p{
+        font-size: clamp(0.6rem, #{"-0.875rem + 8.333vw"},1rem);
+    }
 }
 //Boutons
 .conteneur-bout {

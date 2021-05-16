@@ -1357,6 +1357,10 @@ Grille
   width: 70%;
 }
 
+.entry-content p, .entry-header p {
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem);
+}
+
 .conteneur-bout {
   display: flex;
   flex-wrap: wrap;
@@ -1718,7 +1722,7 @@ Header
 .site-title {
   font-family: "Montserrat", monospace;
   font-weight: bold;
-  font-size: clamp(4rem, -0.875rem + 8.333vw, 6rem);
+  font-size: clamp(3rem, -0.875rem + 8.333vw, 6rem);
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 3.5rem;
@@ -1734,12 +1738,12 @@ Header
   margin-left: 3.5rem;
   font-family: "Montserrat", monospace;
   font-weight: normal;
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
 }
 
 .entry-header h1, .page-header h1 {
   color: #ff6e6e;
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 2rem);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2.5rem);
 }
 
 .entry-header h2, .page-header h2 {
