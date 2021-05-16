@@ -1534,7 +1534,7 @@ Animation bouton carroussel
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info a {
-  color: #cfdd54;
+  color: #fadb85;
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1rem);
   text-decoration: none;
 }
