@@ -1298,8 +1298,9 @@ Grille
 }
 
 .cours h2 {
+  color: #266545;
   text-align: center;
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
+  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.8rem);
 }
 
 .cours section.bloc {
